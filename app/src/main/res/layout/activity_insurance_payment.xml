@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/bg"
+    tools:context=".InsuranceActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="3">
+
+        <TextView
+            android:id="@+id/text1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="Insurance Pay"
+
+            android:textColor="@color/colorWhite"
+            android:textSize="32sp" />
+    </RelativeLayout>
+
+    <GridLayout
+        android:id="@+id/mainGrid"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="8"
+        android:alignmentMode="alignMargins"
+        android:columnCount="1"
+        android:padding="14dp"
+        android:rowCount="1"
+        >
+
+
+        <android.support.v7.widget.CardView
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_columnWeight="1"
+            android:layout_rowWeight="1"
+            android:layout_marginBottom="14dp"
+            android:layout_marginRight="14dp"
+            android:layout_marginLeft="14dp"
+            app:cardElevation="8dp"
+            app:cardCornerRadius="8dp"
+
+            >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal|center_vertical"
+                android:padding="16dp"
+                android:layout_margin="9dp"
+                android:orientation="vertical">
+
+                <android.support.design.widget.TextInputLayout
+                    android:id="@+id/text_vehicle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:errorEnabled="true">
+                    <android.support.design.widget.TextInputEditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="Insurance Name"
+                        android:inputType="text"
+                        android:id="@+id/inscom"/>
+
+                </android.support.design.widget.TextInputLayout>
+
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:errorEnabled="true">
+                    <android.support.design.widget.TextInputEditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="Enter Policy number"
+                        android:id="@+id/policyno"
+                        android:inputType="number"/>
+
+                </android.support.design.widget.TextInputLayout>
+                <android.support.design.widget.TextInputLayout
+                    android:id="@+id/amount1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:errorEnabled="true">
+                    <android.support.design.widget.TextInputEditText
+                        android:id="@+id/amount"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="Amount(Rs.)"
+                        android:inputType="number"/>
+
+                </android.support.design.widget.TextInputLayout>
+
+                <Button
+                    android:id="@+id/pay"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Fetch data"
+                    android:background="@drawable/button_main_background"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="15sp"
+                    android:layout_marginTop="15dp"
+                    />
+
+
+            </LinearLayout>
+
+        </android.support.v7.widget.CardView>
+
+    </GridLayout>
+
+
+</LinearLayout>

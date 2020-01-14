@@ -1,0 +1,39 @@
+<resources>
+    <string name="app_name">Easy Pay</string>
+    <string name="easy_pay_logo">Easy Pay</string>
+    <string name="google">Sign in With Google</string>
+    <string name="next">Next</string>
+    <string name="phone_number">Phone Number</string>
+    <string name="resend_in">Resend In</string>
+    <string name="resend">Resend</string>
+    <string name="sign_out">Sign Out</string>
+    <string-array name="numbers">
+        <item>3 months</item>
+        <item>6 months</item>
+        <item>12 months</item>
+    </string-array>
+    <string-array name="from">
+        <item>Hyderabad</item>
+        <item>Khammam</item>
+        <item>Warangal</item>
+    </string-array>
+    <string-array name="to">
+        <item>Hyderabad</item>
+        <item>Khammam</item>
+        <item>Warangal</item>
+    </string-array>
+    <string-array name="to1">
+
+        <item>Khammam</item>
+        <item>Warangal</item>
+    </string-array>
+    <string-array name="to2">
+        <item>Hyderabad</item>
+        <item>Khammam</item>
+
+    </string-array>
+    <string-array name="to3">
+        <item>Hyderabad</item>
+        <item>Warangal</item>
+    </string-array>
+</resources>
